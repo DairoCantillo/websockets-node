@@ -2,13 +2,19 @@ const express = require('express')
 const socket = require('socket.io')
 const cors = require('cors')
 const app = express()
-
+const path = require('path');
 app.use(express.static("public"))
 app.use(cors())
+
+
+app.use('/', express.static(path.join(__dirname, 'public')))
+
+
 
 const server = app.listen(process.env.PORT || 8080, function(){
   console.log("Listening on port 8080")
 })
+
 
 // Socket setup
 // Listens for the server
