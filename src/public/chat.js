@@ -1,6 +1,5 @@
 // make connection from the client side
 const socket = io(window.location.origin);
-console.log(window.location.origin);
 const message = document.getElementById('message'),
       nameUser = document.getElementById('name'),
       btn = document.getElementById('send'),
