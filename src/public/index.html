@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>websockets</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="chat-window">
+        <div id="output"></div>
+        <div id="answer"></div>
+      </div>
+      <input id="name" type="text" placeholder="Name" />
+      <input id="message" type=“text" placeholder="Message" />
+      <button id="send" type="submit" name="action">Send</button>
+    </div>
+    <script src="./chat.js"></script>
+  </body>
+</html>
